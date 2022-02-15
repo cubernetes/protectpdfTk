@@ -125,4 +125,8 @@ default_lang = {
 }
 
 if __name__ == '__main__':
-    widget = ProtectPdfsWindow('de.json')
+    if len(sys.argv) == 2:
+        lang_file = sys.argv[1]
+    else:
+        lang_file = ''
+    widget = ProtectPdfsWindow(lang_file)
