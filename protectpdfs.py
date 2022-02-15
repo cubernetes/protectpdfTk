@@ -18,6 +18,7 @@ class ProtectPdfsWindow:
             self.lang = default_lang
 
         self.root = Tk()
+        self.root.title(self.lang_string('window_title'))
 
         self.remove_password = BooleanVar()
         self.lbl_selected_dir_text = StringVar()
@@ -119,9 +120,9 @@ default_lang = {
     "dirs_are_being_searched":"Directories are being searched",
     "pdfs_were_modified":"PDF was {\"decrypted\" if self.remove_password.get() else \"encrypted\"} ({pdf_path})",
     "done":"Done: {cnt}/{len(self.pdfs)} PDFs were {\"decrypted\" if self.remove_password.get() else \"encrypted\"}",
-    "error_on_pdf_processing":"An error occured while processing PDF {pdf_path}"
+    "error_on_pdf_processing":"An error occured while processing PDF {pdf_path}",
+    "window_title":"Protect PDFs"
 }
-
 
 if __name__ == '__main__':
     widget = ProtectPdfsWindow('de.json')

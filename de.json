@@ -12,5 +12,6 @@
 	"dirs_are_being_searched":"Verzeichnisse werden durchsucht. Bitte warten",
 	"pdfs_were_modified":"PDF wurde {\"entschlüsselt\" if self.remove_password.get() else \"verschlüsselt\"} ({pdf_path})",
 	"done":"Fertig: Es wurden {cnt}/{len(self.pdfs)} PDFs {\"entschlüsselt\" if self.remove_password.get() else \"verschlüsselt\"}",
-	"error_on_pdf_processing":"Ein Fehler ist aufgetreten beim Verarbeiten von {pdf_path}"
+	"error_on_pdf_processing":"Ein Fehler ist aufgetreten beim Verarbeiten von {pdf_path}",
+	"window_title":"PDFs sichern"
 }
